@@ -17,12 +17,12 @@
                 </tr>
             </thead>
             <tbody>
-                <c:forEach items=${toDoDataByUserName} var="todoItem">
+                <c:forEach items="${toDoDataByUserName}" var="todoItem">
                                     <tr>
                                         <td>${todoItem.ID}</td>
                                         <td>${todoItem.toDoName}</td>
                                         <td>${todoItem.targetDate}</td>
-                                        <td>${todoItem.IsCompleted}</td>
+                                        <td>${todoItem.completed}</td>
                                     </tr>
                                 </c:forEach>
             </tbody>
