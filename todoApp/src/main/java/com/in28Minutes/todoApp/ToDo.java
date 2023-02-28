@@ -8,7 +8,7 @@ public class ToDo {
     private String toDoName;
     private LocalDate targetDate;
 
-    private boolean IsCompleted;
+    private boolean completed;
 
 
     @Override
@@ -18,7 +18,7 @@ public class ToDo {
                 ", userName='" + userName + '\'' +
                 ", toDoName='" + toDoName + '\'' +
                 ", targetDate=" + targetDate +
-                ", IsCompleted=" + IsCompleted +
+                ", IsCompleted=" + completed +
                 '}';
     }
 
@@ -54,20 +54,19 @@ public class ToDo {
         this.targetDate = targetDate;
     }
 
-    public boolean isCompleted() {
-        return IsCompleted;
+    public boolean getCompleted() {
+        return completed;
     }
 
     public void setCompleted(boolean completed) {
-        IsCompleted = completed;
+        this.completed = completed;
     }
-
 
     public ToDo(int ID, String userName, String toDoName, LocalDate targetDate, boolean isCompleted) {
         this.ID = ID;
         this.userName = userName;
         this.toDoName = toDoName;
         this.targetDate = targetDate;
-        IsCompleted = isCompleted;
+        this.completed = isCompleted;
     }
 }
